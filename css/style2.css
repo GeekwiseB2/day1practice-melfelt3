@@ -1,5 +1,5 @@
 body{
-  background-color: blue;
+  background-color: #fff;
   height: 1000px;
 }
 
@@ -8,45 +8,50 @@ li {
   color: #e40007;
 }
 
-@media screen and (min-width: 300px) {
-  .col-md-3 {
+@media screen and (min-width: 375px) {
+  body{
     background-color: blue;
   }
 }
 
 @media screen and (min-width: 500px) {
-  .col-md-3 {
+  body{
     background-color: purple;
   }
 }
 
-.col-xs-1{
-  background-color: #e40007;
-  border: 1px solid #fff;
-  height: 200px;
+.col-xs-1, .col-xs-6{
+  background-color: #C0C0C0;
+  border: 1px solid #000;
+  height: 100px;
 }
 
-.col-sm-2{
-  background-color: navy;
-  border: 1px solid #fff;
-  height: 200px;
+.col-sm-2, .col-sm-4{
+  background-color: #C0C0C0;
+  border: 1px solid #000;
+  height: 100px;
 }
 
-.col-md-4{
-  background-color: olive;
-  border: 1px solid #fff;
-  height: 200px;
+.col-md-4, .col-md-1{
+  background-color: #C0C0C0;
+  border: 1px solid #000;
+  height: 100px;
 }
 
-.col-lg-3{
-  background-color: lavender;
-  border: 1px solid #fff;
-  height: 150px;
+.col-lg-3, .col-lg-9{
+  background-color: #C0C0C0;
+  border: 1px solid #000;
+  height: 100px;
 }
 
 /*Media Queries*/
 
-@media screen and (min-width: 500px){
-  body{
-    background-color: green;
+@media screen and (min-width: 375px){
+  .col-xs-1, .col-sm-2, .col-sm-4, .col-md-4, .col-lg-3, .col-lg-9{
+    background-color: red;
+}
+
+@media screen and (min-width: 768px){
+  .col-xs-1, .col-sm-2, .col-sm-4, .col-md-4, .col-lg-3, .col-lg-9{
+    background-color: olive;
 }
